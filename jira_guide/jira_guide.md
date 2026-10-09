@@ -1,7 +1,4 @@
 ---
-title: "SYSC 3020: Introduction to Software Engineering"
-sub_title: "Jira Guide · Running Your Sprint in Jira"
-author: "Rinkesh Joshi · rinkeshjoshi@cmail.carleton.ca"
 theme:
   name: catppuccin-latte
 ---
@@ -21,75 +18,7 @@ SYSC 3020: Introduction to Software Engineering
 
 <!-- end_slide -->
 
-Jira Guide: Start Here
-===
-
-### Confused about Jira? Start here
-
-The **Process** criterion (4 / 16) grades your Jira board **and its history**.
-These slides walk through every piece, step by step, on a real example board.
-
-<!-- pause -->
-
-| # | Topic | # | Topic |
-|---|---|---|---|
-| 1 | Scrum, not Kanban | 7 | The board (move cards **as you work**) |
-| 2 | How the pieces fit | 8 | Stand-ups as comments |
-| 3 | Backlog + sprint planning | 9 | Review, retro, complete the sprint |
-| 4 | Epics and child items | 10 | History (what the TA sees) |
-| 5 | Sub-tasks, one person each | 11 | Sharing the board with the TAs |
-| 6 | Labels for roles | 12 | Common mistakes + further reading |
-
-Screenshots come from our demo space **SYSC3020_A1_TA** (A1, Sprint 1).
-*Reference only: one person made it in one sitting, so its history and times don't look like a real team's sprint.*
-
-> **Note:** `SYSC-1`, `SYSC-5`, `SYSC-8`, … are just Jira **work item keys**: the demo space's key (`SYSC`) plus a number. They are **not** course codes. Your team's items use **your** space's key (e.g., `ABC-1`).
-
-<!-- end_slide -->
-
-Jira 1: Scrum, Not Kanban
-===
-
-<!-- column_layout: [1, 1] -->
-
-<!-- column: 0 -->
-
-### The assignment *is* a sprint
-
-The handout asks for sprint planning, a sprint goal,
-stand-ups, a review and a retrospective:
-all **Scrum** events. Use a **Scrum** space.
-
-| | Scrum | Kanban |
-|---|---|---|
-| Cadence | Fixed-length sprints | Continuous flow |
-| Roles | PO · SM · team | None required |
-| Planning | Backlog → sprint | Pull when ready |
-| Metric | Burndown, velocity | Cycle time, WIP |
-
-**Read:** https://www.atlassian.com/agile/kanban/kanban-vs-scrum
-
-<!-- column: 1 -->
-
-### Made a Kanban space in A1?
-
-- **Create a new Scrum space** (Spaces → **+** → **Scrum** template → **Team-managed**), or
-- In a team-managed space, turn on **Sprints**
-  (needs the **Backlog** feature first):
-  https://support.atlassian.com/jira-software-cloud/docs/enable-sprints/
-
-### Words changed in Jira
-
-- **Projects** are now called **spaces**
-- **Issues** are now called **work items**
-
-Same features: only the names changed.
-
-<!-- reset_layout -->
-
-<!-- end_slide -->
-
-Jira 2: How the Pieces Fit
+Jira 1: How the Pieces Fit
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -108,7 +37,8 @@ Space  SYSC3020_A1_TA  (Scrum, team-managed)
 │   │   ├─ Sub-task SYSC-15  npc + npc.ghost
 │   │   └─ Sub-task SYSC-16  points + Core Events
 │   ├─ Task   SYSC-9  Task B — SRS (B1–B6)
-│   └─ Task   SYSC-10 Task C — Defect review
+│   ├─ Task   SYSC-10 Task C — Defect review
+│   └─ …  (more items, not all shown)
 │
 ├─ Sprint "A1 Sprint 1 — Requirements"  (+ goal)
 └─ Backlog  SYSC-7, SYSC-12  (not in a sprint yet)
@@ -123,20 +53,23 @@ Space  SYSC3020_A1_TA  (Scrum, team-managed)
 - **Sprint**: the time-box + goal
 - **Backlog**: work not in a sprint yet
 
-**Screenshot →** next slide
+**Screenshot 1 →** next slide
 
 <!-- reset_layout -->
 
+> **Note:** `SYSC-1`, `SYSC-5`, `SYSC-8`, … are just Jira **work item keys**: the demo space's key (`SYSC`) plus a number. They are **not** course codes. Your team's items use **your** space's key (e.g., `ABC-1`).
+> Screenshots come from our demo space **SYSC3020_A1_TA** (A1, Sprint 1). *Reference only: one person made it in one sitting, so its history and times don't look like a real team's sprint.*
+
 <!-- end_slide -->
 
-Jira 2: How the Pieces Fit (Screenshot)
+Jira 1: How the Pieces Fit (Screenshot 1)
 ===
 
 ![image:width:100%](images/jira/01_hie.png)
 
 <!-- end_slide -->
 
-Jira 3: Backlog + Sprint Planning
+Jira 2: Backlog + Sprint Planning
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -164,7 +97,7 @@ The **Board** only shows the items of a **started** sprint.
 
 <!-- column: 1 -->
 
-**Screenshots →** next 2 slides
+**Screenshots 2 and 3 →** next 2 slides
 
 ### Story or Task?
 
@@ -183,21 +116,21 @@ https://www.atlassian.com/agile/tutorials/sprints
 
 <!-- end_slide -->
 
-Jira 3: Backlog + Sprint Planning (Screenshot 1/2)
+Jira 2: Backlog + Sprint Planning (Screenshot 2)
 ===
 
 ![image:width:100%](images/jira/02_bklog.png)
 
 <!-- end_slide -->
 
-Jira 3: Backlog + Sprint Planning (Screenshot 2/2)
+Jira 2: Backlog + Sprint Planning (Screenshot 3)
 ===
 
 ![image:width:100%](images/jira/03_edit_sprint.png)
 
 <!-- end_slide -->
 
-Jira 3: Changes After the Sprint Starts
+Jira 2: Changes After the Sprint Starts
 ===
 
 ### The usual order
@@ -225,7 +158,7 @@ and so does changing an estimate after the start. Plan most of the work on **day
 
 <!-- end_slide -->
 
-Jira 4: Epics and Child Items
+Jira 3: Epics and Child Items
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -249,7 +182,7 @@ Every story and task of the assignment should sit **under its epic**.
 
 <!-- column: 1 -->
 
-**Screenshot →** next slide
+**Screenshot 4 →** next slide
 
 **Docs:**
 https://www.atlassian.com/agile/tutorials/epics
@@ -258,14 +191,14 @@ https://www.atlassian.com/agile/tutorials/epics
 
 <!-- end_slide -->
 
-Jira 4: Epics and Child Items (Screenshot)
+Jira 3: Epics and Child Items (Screenshot 4)
 ===
 
 ![image:width:100%](images/jira/04_epic_child.png)
 
 <!-- end_slide -->
 
-Jira 5: Sub-tasks, One Person Each
+Jira 4: Sub-tasks, One Person Each
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -294,7 +227,7 @@ or the add button under the title) → title → Enter → set its **Assignee**.
 
 <!-- column: 1 -->
 
-**Screenshot →** next slide: SYSC-8 (Task A) split into
+**Screenshot 5 →** next slide: SYSC-8 (Task A) split into
 **4 sub-tasks**, one per package, one assignee each.
 Use it as a **reference**.
 
@@ -307,14 +240,14 @@ https://support.atlassian.com/jira-software-cloud/docs/create-a-work-item-and-a-
 
 <!-- end_slide -->
 
-Jira 5: Sub-tasks, One Person Each (Screenshot)
+Jira 4: Sub-tasks, One Person Each (Screenshot 5)
 ===
 
 ![image:width:100%](images/jira/05_screenshot.png)
 
 <!-- end_slide -->
 
-Jira 6: Labels for Roles
+Jira 5: Labels for Roles
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -349,7 +282,7 @@ Board / backlog → **Filter** → **Labels** → tick a label
 
 <!-- column: 1 -->
 
-**Screenshots →** next 2 slides
+**Screenshots 6 and 7 →** next 2 slides
 
 **Docs:**
 https://support.atlassian.com/jira/kb/how-to-create-and-use-labels-in-jira-cloud
@@ -359,21 +292,21 @@ https://support.atlassian.com/jira-software-cloud/docs/show-or-hide-issues-on-yo
 
 <!-- end_slide -->
 
-Jira 6: Labels for Roles (Screenshot 1/2)
+Jira 5: Labels for Roles (Screenshot 6)
 ===
 
 ![image:width:100%](images/jira/06_sysc11.png)
 
 <!-- end_slide -->
 
-Jira 6: Labels for Roles (Screenshot 2/2)
+Jira 5: Labels for Roles (Screenshot 7)
 ===
 
 ![image:width:100%](images/jira/07_filter.png)
 
 <!-- end_slide -->
 
-Jira 7: The Board (Move Cards As You Work)
+Jira 6: The Board (Move Cards As You Work)
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -401,7 +334,7 @@ their parent, owners spread across the team.
 
 <!-- column: 1 -->
 
-**Screenshot →** next slide
+**Screenshot 8 →** next slide
 
 Use the board **Filter** (**Assignee**, **Labels**, **Parent** = epic) to check
 who is carrying what.
@@ -410,14 +343,14 @@ who is carrying what.
 
 <!-- end_slide -->
 
-Jira 7: The Board (Move Cards As You Work) (Screenshot)
+Jira 6: The Board (Move Cards As You Work) (Screenshot 8)
 ===
 
 ![image:width:100%](images/jira/08_board.png)
 
 <!-- end_slide -->
 
-Jira 8: Stand-ups as Comments
+Jira 7: Stand-ups as Comments
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -439,6 +372,17 @@ What gets graded is the **record**: **every member's** three lines
 **Each student posts their own.** Jira shows **who** posted each
 comment, so one comment for the whole team can't show that the others took part.
 
+<!-- column: 1 -->
+
+**Screenshot 9 →** next slide
+
+A **real** blocker + who is helping is better than
+"Blocked: none" every time.
+
+**Read:** https://www.atlassian.com/agile/scrum/standups
+
+<!-- reset_layout -->
+
 ### Template (each member, each stand-up)
 
 ```
@@ -448,27 +392,16 @@ Doing:   class diagram associations for level package
 Blocked: Graphviz missing on my laptop → asked <name>
 ```
 
-<!-- column: 1 -->
-
-**Screenshot →** next slide
-
-A **real** blocker + who is helping is better than
-"Blocked: none" every time.
-
-**Read:** https://www.atlassian.com/agile/scrum/standups
-
-<!-- reset_layout -->
-
 <!-- end_slide -->
 
-Jira 8: Stand-ups as Comments (Screenshot)
+Jira 7: Stand-ups as Comments (Screenshot 9)
 ===
 
 ![image:width:100%](images/jira/09_subtask.png)
 
 <!-- end_slide -->
 
-Jira 9: Review, Retro, Complete the Sprint
+Jira 8: Review, Retro, Complete the Sprint
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -482,10 +415,12 @@ Jira 9: Review, Retro, Complete the Sprint
 2. **Retrospective**: the team agrees on **3 bullets**
    (**Keep** · **Change** · **Try**): one set for the **team**,
    not per member
-3. They go in the **Team & Process** section of the design
-   page, so they end up in **design.pdf** (a Jira task like
-   SYSC-11 is optional)
-4. Write down **next sprint's roles** (rotation!)
+
+The retro bullets go in the **Team & Process** section of the design
+page, so they end up in **design.pdf** (a Jira task like
+SYSC-11, see **Screenshot 10**, is optional).
+
+Write down **next sprint's roles** (rotation!).
 
 ### Then complete the sprint
 
@@ -499,7 +434,7 @@ A completed sprint stays in the history and reports:
 
 <!-- column: 1 -->
 
-**Screenshots →** next 2 slides
+**Screenshots 10 and 11 →** next 2 slides
 
 **Read:** https://www.atlassian.com/agile/scrum/retrospectives
 
@@ -507,21 +442,21 @@ A completed sprint stays in the history and reports:
 
 <!-- end_slide -->
 
-Jira 9: Review, Retro, Complete the Sprint (Screenshot 1/2)
+Jira 8: Review, Retro, Complete the Sprint (Screenshot 10)
 ===
 
 ![image:width:100%](images/jira/10_retro.png)
 
 <!-- end_slide -->
 
-Jira 9: Review, Retro, Complete the Sprint (Screenshot 2/2)
+Jira 8: Review, Retro, Complete the Sprint (Screenshot 11)
 ===
 
 ![image:width:100%](images/jira/11_dialog.png)
 
 <!-- end_slide -->
 
-Jira 10: History (What the TA Sees)
+Jira 9: History (What the TA Sees)
 ===
 
 <!-- column_layout: [1, 1] -->
@@ -551,7 +486,7 @@ Comments (stand-ups) carry author + time too.
 
 <!-- column: 1 -->
 
-**Screenshot →** next slide
+**Screenshot 12 →** next slide
 
 **Reports** (if enabled): **Burnup**, **Sprint burndown**,
 **Velocity**, **Cumulative flow** (turn on: Space settings → Features).
@@ -564,14 +499,14 @@ https://support.atlassian.com/jira-software-cloud/docs/what-are-the-different-ty
 
 <!-- end_slide -->
 
-Jira 10: History (What the TA Sees) (Screenshot)
+Jira 9: History (What the TA Sees) (Screenshot 12)
 ===
 
 ![image:width:100%](images/jira/12_activity.png)
 
 <!-- end_slide -->
 
-Jira 11: Sharing the Board With the TAs
+Jira 10: Sharing the Board With the TAs
 ===
 
 ### Before the deadline
@@ -592,7 +527,7 @@ Jira 11: Sharing the Board With the TAs
 
 <!-- end_slide -->
 
-Jira 12: Common Mistakes + Further Reading
+Jira 11: Common Mistakes + Further Reading
 ===
 
 ### Common mistakes
