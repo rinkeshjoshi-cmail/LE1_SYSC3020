@@ -267,7 +267,7 @@ Sprint 2 › Run It in Jira
 
 - If **Sprint 1** is still open → Backlog → **Complete sprint** first
 - Create the epic: **"A2 — Design: Structure & Interaction"** (a **new** epic, same Jira space as A1)
-- Break it into tasks → **assign** each to a member (split a shared task into **sub-tasks**; see Jira Guide › Jira 5)
+- Break it into tasks → **assign** each to a member (split a shared task into **sub-tasks**; see Jira Guide › Jira 4)
 - Agree a **one-line sprint goal** → Create Sprint → **Start Sprint**
 - **Rotate roles:** Product Owner · Scrum Master · QA Lead
 
